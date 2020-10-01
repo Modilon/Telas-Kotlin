@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background2"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/tv_diferenca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EXPLORE E FAÇA A DIFERENÇA"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="133dp" />
+    <TextView
+        android:id="@+id/tv_apoiando"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" APOIANDO O TRABALHO DE ARTISTAS"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_diferenca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <TextView
+        android:id="@+id/tv_iniciantes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" INICIANTES"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_apoiando"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="326dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="210dp"
+        android:ems="10"
+        android:hint="Digite seu email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#FFFFFF"
+        android:textSize="18sp"
+        android:background="@drawable/custom_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_iniciantes" />
+    <EditText
+        android:id="@+id/et_passworld"
+        android:layout_width="326dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="31dp"
+        android:drawableEnd="@drawable/ic_eye"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:textColorHint="#FFFFFF"
+        android:textSize="18sp"
+        android:background="@drawable/custom_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_email" />
+
+    <TextView
+        android:id="@+id/tv_esqueceuSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Esqueceu a senha?"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/et_passworld"
+        tools:layout_editor_absoluteX="60dp"
+        android:onClick="esqueceu"/>
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:text="Entrar"
+        app:layout_constraintTop_toBottomOf="@id/tv_esqueceuSenha"
+        android:onClick="login"
+        android:layout_marginTop="18dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/custom_button"
+        />
+    <TextView
+        android:id="@+id/tv_criarconta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="transparent"
+        android:text="Novo usuário? Crie uma conta"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt_login"
+        android:onClick="novoUsuario" />
+</androidx.constraintlayout.widget.ConstraintLayout>
